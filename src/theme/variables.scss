@@ -226,3 +226,16 @@
     --ion-tab-bar-background: #1f1f1f;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: white;
+
+  }
+}

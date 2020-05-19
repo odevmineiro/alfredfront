@@ -1,1 +1,39 @@
+:root {
+    --ion-color-primary: #ff9000 !important;
+    @media (prefers-color-scheme: dark){
+        body {
+            --ion-color-primary: #ff9000 !important;
+        }
+    }
+    @media (prefers-color-scheme: light){
+        body {
+            --ion-color-primary: #ff9000 !important;
+        }
+    }
+}
+
+.custom-all {
+    // margin-top: 30px;
+    contain: none;
+    --background: black;
+    --color-selected: #ff9000;
+    --border: none;
+  }
+  
+  .custom-all ion-tab-button:nth-child(2) {
+    --background: black;
+    --color: rgba(255, 255, 255, 0.7);
+    --color-selected: #ff9000;
+    border-radius: 50%;
+    max-width: 56px;
+    height: 56px;
+    margin-bottom: 56px;
+}
+
+ion-tab-button {
+    --ripple-color: transparent;
+
+}
+
+
 

@@ -24,3 +24,27 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+:root[mode=ios],
+:root[mode=md] {
+  --ion-font-family:  'Roboto Slab'!important;
+  font-family:  'Roboto Slab' !important;
+}
+
+:root {
+  // --ion-color-primary: #ff9000 !important;
+  @media (prefers-color-scheme: dark){
+      body {
+        --ion-color-primary: #ff9000 !important;
+      }
+  }
+  @media (prefers-color-scheme: light){
+      body {
+        --ion-color-primary: #ff9000 !important;
+      }
+  }
+}
+
+* {
+  outline: none;
+}

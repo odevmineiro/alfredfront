@@ -1,0 +1,44 @@
+<ion-content>
+  <div class="container">
+    <div class="header">
+      <div class="title">
+        <img src="https://image.flaticon.com/icons/png/512/149/149071.png">
+      </div>
+      <h3>Welcome!</h3>
+      <p>Faça seu cadastro</p>
+    </div>
+    <div class="body">
+      <ion-list>
+        <ion-item>
+          <ion-icon slot="start" name="person-outline"></ion-icon>
+          <ion-input placeholder="Nome" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="mail-outline"></ion-icon>
+          <ion-input placeholder="Email" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+          <ion-input placeholder="Senha" type="password"></ion-input>
+        </ion-item>
+        <ion-button class="no-ripple" expand="block" style="--background: #ff9000; color: #312e38; width: 100%;">
+          <!-- <ion-icon name="list-outline" style="margin-right: 5px;"></ion-icon> -->
+          Cadastrar
+        </ion-button>
+        <!-- <ion-item>
+          <ion-icon slot="start" name="lock"></ion-icon>
+          <ion-input placeholder="Password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="lock"></ion-icon>
+          <ion-input placeholder="Retype Password"></ion-input>
+        </ion-item> -->
+      </ion-list>
+      
+    </div>
+    <div class="footer" routerLink="/home" routerDirection="back" style="align-items: center; color: #ff9000;" routerLink="/login">
+      <ion-icon slot="start" name="chevron-back-outline" style="margin-right: 8px; color: #ff9000;"></ion-icon>
+      Fazer login
+    </div>
+  </div>
+</ion-content>
