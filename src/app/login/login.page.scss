@@ -1,7 +1,7 @@
 ion-content {
     --offset-top: 0px;
     --offset-bottom: 0px;
-    --background: #232129;
+    --background: white;
     --color: #FFF;
 
     .container {
@@ -35,20 +35,20 @@ ion-content {
                 ion-button {
                     --ion-font-family: 'Roboto Slab' serif;
                     font-weight: 500 !important;
-                    --background-activated: #ff9000 !important;
+                    --background-activated: rgb(104, 109, 224) !important;
                 }
                 ion-item {
                     --border-color: transparent!important;
                     --highlight-height: 0;
-                    --background: none;
+                    --background: #f5f6f9;
                     background: rgba(255,255,255,0.1);
                     border-radius: 4px;
                     margin-bottom: 10px;
                     ion-icon {
-                        color: #FAFAFA;
+                        color: black;
                     }
                     ion-input {
-                        --color: #FFF;
+                        --color: black;
                     }
                 }
             }
@@ -67,4 +67,5 @@ ion-content {
 p {
     font-weight: 500 !important;
     font-size: 19px;
+    color: black;
 }

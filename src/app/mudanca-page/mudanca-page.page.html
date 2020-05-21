@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar style="--background: rgb(104, 109, 224);">
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close-circle-outline" style="color: white"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h2 style="color: black">Estou,</h2>
+  <div class="container">
+
+    <div class="body">
+      <ion-list>
+        <ion-item>
+          <ion-icon slot="start" name="list-outline" style="color: black"></ion-icon>
+          <ion-select value="Saindo" style="max-width: 100%; --padding-start: 0 !important">
+            <ion-select-option value="Saindo">Saindo</ion-select-option>
+            <ion-select-option value="Chegando">Chegando</ion-select-option>
+            <ion-select-option value="Manutençao">Fazendo Manutenção</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="person-outline" style="color: black"></ion-icon>
+          <ion-input placeholder="Nome" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="home-outline" style="color:black"></ion-icon>
+          <ion-input placeholder="Torre/Apartamento" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="call-outline" style="color: black"></ion-icon>
+          <ion-input placeholder="Telefone" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="reader-outline" style="color: black"></ion-icon>
+          <ion-input placeholder="Data" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-textarea rows="5" cols="20" placeholder="Informe o que precisa para sua mudança/manutenção." type="text" style="color: black"></ion-textarea>
+        </ion-item>
+        <ion-button class="no-ripple" expand="block" style="--background: rgb(104, 109, 224); --border-radius: 40px; color: white;">
+          <ion-icon slot="start" name="paper-plane-outline"></ion-icon>
+          Informar
+        </ion-button>
+
+      </ion-list>
+    </div>
+  </div>
+</ion-content>

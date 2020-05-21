@@ -35,16 +35,31 @@
   // --ion-color-primary: #ff9000 !important;
   @media (prefers-color-scheme: dark){
       body {
-        --ion-color-primary: #ff9000 !important;
+        --ion-color-primary: white !important;
       }
   }
   @media (prefers-color-scheme: light){
       body {
-        --ion-color-primary: #ff9000 !important;
+        --ion-color-primary: white !important;
       }
   }
 }
 
 * {
   outline: none;
+}
+
+ion-header {
+  height: 18vh;
+  .header-md .header-collapse-none .hydrated {
+      background-color: rgb(104, 109, 224) !important;
+      --ion-background-color: rgb(104, 109, 224) !important;
+  }
+  --ion-background-color: rgb(104, 109, 224) !important;
+  background-color: rgb(104, 109, 224) !important;
+
+}
+
+.header-ios ion-toolbar:last-of-type {
+  --border-width: 0 !important;
 }

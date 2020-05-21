@@ -32,7 +32,7 @@ export class GuestModalPage {
   code = JSON.stringify({
     name: 'Cainã',
     idade: 22,
-    cpf: '424.223.578.06'
+    cpf: '123'
   });
   
   generated = '';

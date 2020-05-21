@@ -17,7 +17,7 @@
           <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
           <ion-input placeholder="Senha" type="password"></ion-input>
         </ion-item>
-        <ion-button expand="block" style="--background: #ff9000; color: #312e38; width: 100%;">
+        <ion-button (click)="goDash()" routerDirection="forward" expand="block" style="--background: rgb(104, 109, 224); color: whitesmoke; --border-radius: 40px">
           <!-- <ion-icon name="list-outline" style="margin-right: 5px;"></ion-icon> -->
           Entrar
         </ion-button>
@@ -32,8 +32,8 @@
       </ion-list>
       
     </div>
-    <div class="footer" routerLink="/home" routerDirection="forward" style="align-items: center; color: #ff9000;" routerLink="/signout">
-      <ion-icon slot="start" name="chevron-forward-outline" style="margin-right: 8px; color: #ff9000;"></ion-icon>
+    <div class="footer" routerLink="/home" routerDirection="forward" style="align-items: center; color: black;" routerLink="/signout">
+      <ion-icon slot="start" name="chevron-forward-outline" style="margin-right: 8px; color: black;"></ion-icon>
       Criar uma conta
     </div>
   </div>

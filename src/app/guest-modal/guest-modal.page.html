@@ -1,38 +1,44 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar style="--background: rgb(104, 109, 224);">
     <ion-buttons slot="end">
-      <ion-button (click)="closeModal()">Fechar</ion-button>
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close-circle-outline" style="color: white"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-content>
   <div class="container">
-    <div class="header">
+    <!-- <div class="header">
       <div class="title">
         <img src="https://image.flaticon.com/icons/png/512/149/149071.png">
       </div>
-      <h3>Olá, Ezequias</h3>
-      <p>Cadastre o visitante</p>
-    </div>
+      <h3>Olá, Cainã</h3>
+      <p style="color: black">Cadastre o visitante</p>
+    </div> -->
     <div class="body">
       <ion-list>
         <ion-item>
-          <ion-icon slot="start" name="person-outline"></ion-icon>
+          <ion-icon slot="start" name="person-outline" style="color: black"></ion-icon>
           <ion-input placeholder="Nome" type="text"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-icon slot="start" name="mail-outline"></ion-icon>
+          <ion-icon slot="start" name="mail-outline" style="color: black"></ion-icon>
           <ion-input placeholder="Email" type="text"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-icon slot="start" name="document-text-outline"></ion-icon>
+          <ion-icon slot="start" name="document-text-outline" style="color: black"></ion-icon>
           <ion-input placeholder="CPF" type="text"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-icon slot="start" name="call-outline"></ion-icon>
+          <ion-icon slot="start" name="call-outline" style="color: black"></ion-icon>
           <ion-input placeholder="Telefone" type="text"></ion-input>
         </ion-item>
-        <ion-button (click)="process()" class="no-ripple" expand="block" style="--background: #ff9000; color: #312e38; width: 100%;">
+        <ion-item>
+          <ion-textarea rows="5" cols="20" placeholder="Informe uma descrição" type="text" style="color: black"></ion-textarea>
+        </ion-item>
+        <ion-button (click)="process()" class="no-ripple" expand="block" style="--background: rgb(104, 109, 224); color: white; --border-radius: 40px">
+          <ion-icon slot="start" name="paper-plane-outline"></ion-icon>
           Convidar
         </ion-button>
         <img *ngIf="displayQrCode()" [src]="generated" />

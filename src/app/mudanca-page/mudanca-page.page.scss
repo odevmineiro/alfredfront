@@ -4,6 +4,14 @@ ion-content {
     --background: #FFF;
     --color: #FFF;
 
+    ion-select {
+        // --font: $font;
+        // font-family: $font !important; 
+        // .select-text .select-placeholder {
+        //     --font: $font !important;  
+        // }
+        color: black !important
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -55,7 +63,9 @@ ion-content {
     }
 }
 
-p {
-    font-weight: 500 !important;
-    font-size: 19px;
+
+h2 {
+    margin-left: 63px !important; 
+    font-weight: 500;
+    font-family: 'Roboto Slab';
 }
