@@ -11,13 +11,30 @@ ion-content {
 }
 
 ion-card {
-    --background: white;
+    --background: white; 
+}
+
+ion-row {
+    margin-top: 65%;
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header {
     background-color: rgb(104, 109, 224);
     height: 180px;
-    padding-top: 1px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
     h2 {
         color: white;
         font-family: 'Roboto Slab';
@@ -43,5 +60,8 @@ ion-card {
     display: flex;
     justify-content: center;
     margin-top: -76px;
-    
+    position: fixed;
+    top: 21%;
+    left: 30%;
+    z-index: 3;
 }
