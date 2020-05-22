@@ -9,18 +9,25 @@
 </ion-header>
 <ion-content>
   <div class="container">
-    <!-- <div class="header">
-      <div class="title">
-        <img src="https://image.flaticon.com/icons/png/512/149/149071.png">
-      </div>
-      <h3>Olá, Cainã</h3>
-      <p style="color: black">Cadastre o visitante</p>
-    </div> -->
     <div class="body">
       <ion-list>
+        <ion-item class="select">
+          <ion-label style="color: black;">
+            Visitante
+          </ion-label>
+          <ion-checkbox item-left style="--background: rgb(104, 109, 224)"></ion-checkbox>
+          <ion-label style="color: black">
+            Prestador
+          </ion-label>
+          <ion-checkbox slot="start" style="--background: rgb(104, 109, 224)"></ion-checkbox>
+        </ion-item>
         <ion-item>
           <ion-icon slot="start" name="person-outline" style="color: black"></ion-icon>
           <ion-input placeholder="Nome" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="hammer-outline" style="color: black"></ion-icon>
+          <ion-input placeholder="Empresa" type="text"></ion-input>
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="mail-outline" style="color: black"></ion-icon>

@@ -4,6 +4,14 @@ ion-content {
     --background: #FFF;
     --color: #FFF;
 
+    .select {
+        --background: none !important;
+    }
+
+    ion-checkbox {
+        --background-checked: rgb(104, 109, 224) !important;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -11,21 +19,6 @@ ion-content {
         align-items: center;
         height: 100%;
         padding: 20px 0;
-        // .header {
-        //     flex: 1;
-        //     justify-content: center;
-        //     text-align: center;
-        //     padding-top: 20px;
-        //     .title {
-        //         img {
-        //             height: 100px;
-        //             width: 100px;
-        //         }
-        //     }
-        //     h3 {
-        //         color: #06bebd;
-        //     }
-        // }
         .body {
             ion-list {
                 --background: none;
@@ -48,13 +41,9 @@ ion-content {
                     ion-input {
                         --color: black;
                     }
+
                 }
             }
         }
     }
-}
-
-p {
-    font-weight: 500 !important;
-    font-size: 19px;
 }
