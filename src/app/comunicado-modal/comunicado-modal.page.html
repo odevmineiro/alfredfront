@@ -8,6 +8,20 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [scrollEvents]="true" style="--background: white !important">
+  <div>
+    <div>
+      <ion-card style="border: none">
+        <ion-item lines="none" style="color: black !important; --background: rgb(104, 109, 224) !important;">
+          <ion-icon name="megaphone-outline"></ion-icon>           
+          <p style="color: white; padding-left: 10px;"><i>Manutenção de Portão Garagem I </i></p>
+        </ion-item>
 
+        <ion-card-content style="background-color: white">
+          <p>Será feito uma manutenção no portão da garagem amanhã.</p>
+        </ion-card-content>
+
+      </ion-card>
+    </div>
+  </div>
 </ion-content>
