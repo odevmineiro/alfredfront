@@ -37,12 +37,10 @@
         <ion-item>
           <ion-textarea rows="5" cols="20" placeholder="Informe uma descrição" type="text" style="color: black"></ion-textarea>
         </ion-item>
-        <ion-button (click)="process()" class="no-ripple" expand="block" style="--background: rgb(104, 109, 224); color: white; --border-radius: 40px">
+        <ion-button class="no-ripple" expand="block" style="--background: rgb(104, 109, 224); color: white; --border-radius: 40px">
           <ion-icon slot="start" name="paper-plane-outline"></ion-icon>
           Convidar
         </ion-button>
-        <img *ngIf="displayQrCode()" [src]="generated" />
-
       </ion-list>
     </div>
   </div>
