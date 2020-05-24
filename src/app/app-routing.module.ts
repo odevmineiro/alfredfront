@@ -39,6 +39,10 @@ const routes: Routes = [
     path: 'entrega-modal',
     loadChildren: () => import('./entrega-modal/entrega-modal.module').then( m => m.EntregaModalPageModule)
   },
+  {
+    path: 'list-component',
+    loadChildren: () => import('./list-component/list-component.module').then( m => m.ListComponentPageModule)
+  },
 ];
 @NgModule({
   imports: [
